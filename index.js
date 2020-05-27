@@ -2,6 +2,7 @@
 	let vm = this;
 	let bestLocalCafe_lat = 33.62283;
 	let bestLocalCafe_long = -117.922305;
+	let gmapBtn, bmapBtn;
 	let gmap, gmapTarget, gmapOptions;
 	let bmap, bmapTarget, bmapOptions;
 
@@ -13,14 +14,20 @@
 	vm.initBmap = _initBmap;
 
 	// === LOCAL FUNCTIONS ===
-	function showMap(mapId) {
-		switch (mapId) {
+	function showMap(btnTarget) {
+		switch (btnTarget.id) {
 			case "gmapBtn":
+				bmapBtn.classList.remove("btn-selected");
+				gmapBtn.classList.add("btn-selected");
+
 				gmapTarget.classList.remove("map-hidden");
 				bmapTarget.classList.add("map-hidden");
 
 				return;
 			case "bmapBtn":
+				gmapBtn.classList.remove("btn-selected");
+				bmapBtn.classList.add("btn-selected");
+
 				bmapTarget.classList.remove("map-hidden");
 				gmapTarget.classList.add("map-hidden");
 
@@ -88,6 +95,9 @@
 	}
 
 	function initialize() {
+		gmapBtn = document.getElementById("gmapBtn");
+		bmapBtn = document.getElementById("bmapBtn");
+
 		gmapTarget = document.getElementById("gmap");
 		bmapTarget = document.getElementById("bmap");
 
@@ -97,7 +107,7 @@
 
 			if (event.target) {
 				event.preventDefault();
-				showMap(event.target.id);
+				showMap(event.target);
 			}
 		});
 	}
