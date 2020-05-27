@@ -1,0 +1,92 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	font-size: 1em;
+	line-height: 1.4;
+	background-color: #fcfcfc;
+}
+
+html,
+body h1 {
+	font-size: 44px;
+	line-height: 52px;
+	margin: 1em auto;
+}
+
+html,
+body h4 {
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.action-section {
+	margin-bottom: 2em;
+}
+
+.action-section > p {
+	text-align: center;
+}
+
+.btn {
+	position: relative;
+	margin: 0 0 2em;
+	width: 100%;
+	color: black;
+	cursor: pointer;
+	font: 400 14px "Roboto", sans-serif;
+	line-height: 45px;
+	max-width: 160px;
+	text-decoration: none;
+}
+
+.btn-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.btn-container button {
+	margin: auto 0;
+}
+
+.container {
+	margin: 0 auto;
+	box-sizing: content-box;
+	max-width: 800px;
+}
+
+.footer-section {
+	min-height: 66px;
+	height: 100%;
+}
+
+.header-section {
+	text-align: center;
+}
+
+.map-container {
+	position: relative;
+	height: 0;
+	width: 100%;
+	background-color: #f5f5f5;
+}
+
+.map-section {
+	min-height: 400px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.map {
+	height: 400px;
+	width: 100%;
+}
+
+.map-hidden {
+	display: none;
+}

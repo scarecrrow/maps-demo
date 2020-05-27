@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>TC's GitHub Pages Demo</title>
+		<meta name="description" content="Meow" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="/styles/index.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/assets/img/faviconapple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/assets/img/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/assets/img/favicon/favicon-16x16.png"
+		/>
+		<link
+			rel="manifest"
+			href="/assets/img/favicon/favicon.ico /site.webmanifest"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<section class="header-section">
+				<h1>TC's Simple Maps API Demo</h1>
+			</section>
+
+			<section class="action-section">
+				<p>Choose a map provider!</p>
+				<div class="btn-container">
+					<button id="gmapBtn" class="btn">Google Maps</button>
+					<button id="bmapBtn" class="btn">Bing Maps</button>
+				</div>
+			</section>
+
+			<section class="map-section">
+				<div class="map-container">
+					<div id="gmap" class="map"></div>
+					<div id="bmap" class="map map-hidden"></div>
+				</div>
+			</section>
+
+			<section class="footer-section"></section>
+		</div>
+
+		<!-- GOOGLE MAP -->
+		<script
+			async
+			defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC54vzZ7VhcF8vchqyafZlEu8mZsgICYsE&callback=initGmap"
+		></script>
+
+		<!-- BING MAP -->
+		<script
+			async
+			defer
+			type="text/javascript"
+			src="https://www.bing.com/api/maps/mapcontrol?key=Am3s67cN3mDavmQeCHpRQuhIfEKzFNgsVMLTjKXtqQtdZ4knr_racBIf-CaDC8vm&callback=initBmap"
+		></script>
+
+		<!-- OUR JS -->
+		<script src="/index.js" async defer></script>
+	</body>
+</html>
