@@ -1,7 +1,7 @@
 (function () {
 	let vm = this;
-	let bestLocalCafe_lat = 33.62283;
-	let bestLocalCafe_long = -117.922305;
+	let bestLocalCafe_lat = 33.621030;
+	let bestLocalCafe_long = -117.922658;
 	let gmapBtn, bmapBtn;
 	let gmap, gmapTarget, gmapOptions;
 	let bmap, bmapTarget, bmapOptions;
